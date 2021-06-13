@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Case Study</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <center>
+                <ol>
+                    <div class="text_images_result">
+                        <li>
+                            <b>Test Image - </b>
+                            <img class="img-responsive" src="Headphones.jpg">
+                        </li>
+        
+                        <h5>Output on <b>Microsoft Azure</b> -
+                            <span class="identify_result">Wall</span>
+                        </h5>
+        
+                        <h5>Output on <b>MobileNet</b> -
+                            <span class="identify_result">Mouse</span>
+                        </h5>
+
+                        <h5>Output on <b>Wolfram Image Identification Project</b> -
+                            <span class="identify_result">Steering Wheel</span>
+                        </h5>
+        
+                        <div class="bob3">
+                            <h4>Result - </h4>
+                            <h4>No model identified the Headphones correctly</h4>
+                            <hr>
+                        </div>
+                    </div>
+
+                    <li>
+                        <b>Test Image - </b>
+                        <img class="img-responsive" src="Moisturizer.jpg">
+                    </li>
+    
+                    <h5>Output on <b>Microsoft Azure</b> -
+                        <span class="identify_result">Bottle</span>
+                    </h5>
+    
+                    <h5>Output on <b>MobileNet</b> -
+                        <span class="identify_result">Beer Bottle</span>
+                    </h5>
+
+                    <h5>Output on <b>Wolfram Image Identification Project</b> -
+                        <span class="identify_result">Vial</span>
+                    </h5>
+    
+                    <div class="mini_result">
+                        <h4>Result - </h4>
+                        <h4>No model got the Moisturizer bottle correctly but Azure gave the result as Bottle which is not wrong</h4>
+                        <hr>
+                    </div>
+
+                    <li>
+                        <b>Test Image - </b>
+                        <img class="img-responsive" src="Book.jpg">
+                    </li>
+    
+                    <h5>Output on <b>Microsoft Azure</b> -
+                        <span class="identify_result">Text</span>
+                    </h5>
+    
+                    <h5>Output on <b>MobileNet</b> -
+                        <span class="identify_result">Packet</span>
+                    </h5>
+
+                    <h5>Output on <b>Wolfram Image Identification Project</b> -
+                        <span class="identify_result">Framework</span>
+                    </h5>
+    
+                    <div class="mini_result">
+                        <h4>Result - </h4>
+                        <h4>No model identified the book correctly</h4>
+                        <hr>
+                    </div>
+
+                    <li>
+                        <b>Test Image - </b>
+                        <img class="img-responsive" src="Comb.jpg">
+                    </li>
+    
+                    <h5>Output on <b>Microsoft Azure</b> -
+                        <span class="identify_result">Comb</span>
+                    </h5>
+    
+                    <h5>Output on <b>MobileNet</b> -
+                        <span class="identify_result">Microphone</span>
+                    </h5>
+
+                    <h5>Output on <b>Wolfram Image Identification Project</b> -
+                        <span class="identify_result">Bristle Brush</span>
+                    </h5>
+    
+                    <div class="mini_result">
+                        <h4>Result - </h4>
+                        <h4>Azure identified the Comb correctly, Wolfram identified it as Bristle Brush which is wrong but better than MobileNet which said it was a Microphone</h4>
+                        <hr>
+                    </div>
+
+                    <li>
+                        <b>Test Image - </b>
+                        <img class="img-responsive" src="Water Bottle.jpg">
+                    </li>
+    
+                    <h5>Output on <b>Microsoft Azure</b> -
+                        <span class="identify_result">Bottle</span>
+                    </h5>
+    
+                    <h5>Output on <b>MobileNet</b> -
+                        <span class="identify_result">Wine Bottle</span>
+                    </h5>
+
+                    <h5>Output on <b>Wolfram Image Identification Project</b> -
+                        <span class="identify_result">Vial</span>
+                    </h5>
+    
+                    <div class="mini_result">
+                        <h4>Result - </h4>
+                        <h4>No model identified the Water bottle correctly but Azure gave the result as Bottle which is not wrong</h4>
+                        <hr>
+                    </div>
+
+                    <div id="conclusion">
+                        <label>Case Study was Trained on 5 images.</label>
+                        <hr>
+                        <h4>Azure identfied 1 image correctly and gave good results for another 2 images.</h4>
+                        <br>
+                        <h4>Wolfram identified all the images wrongly but gave 1 okay result as Bristle Brush.</h4>
+                        <br>
+                        <h4>MobileNet identefied all the images with bad results.</h4>
+                        <br>
+                        <h4 id="better"><b>Hence Azure is better model.</b></h4>
+                    </div>
+                </ol>   
+            </center>
+        </div>
+    </body>
+</html>
